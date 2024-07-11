@@ -1,0 +1,49 @@
+.container {
+  height: 80px;
+  display: flex;
+  padding: 28px 0;
+  justify-content: space-around;
+
+  .logo {
+    display: flex;
+    height: 24px;
+    align-items: center;
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+    .circles {
+      display: flex;
+      position: relative;
+      width: 40px;
+      margin-right: 9px;
+      .blueCircle {
+        width: 24px;
+        height: 24px;
+        background-color: #2a6cea;
+        border-radius: 50%;
+      }
+      .whiteCircle {
+        @extend .blueCircle;
+        background-color: #eceff2;
+        position: absolute;
+        left: 10px;
+      }
+    }
+  }
+  .navigationList {
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      font-size: 16px;
+      font-weight: 400;
+      color: white;
+      &:hover {
+        border-bottom: 1px solid white;
+        cursor: pointer;
+      }
+    }
+  }
+}
