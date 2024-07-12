@@ -4,8 +4,8 @@ import style from "./style.module.scss";
 import { TCard } from "../../app/types/types";
 export const Card = ({ city, name, img, text }: TCard) => {
   return (
-   
-      <div className={style.card}>
+    <div className={style.card}>
+      <div className={style.cardContainer}>
         <div className={style.headerCard}>
           <img src={img} alt='avatar_1' />
           <p>
@@ -15,7 +15,7 @@ export const Card = ({ city, name, img, text }: TCard) => {
           </p>
         </div>
         <p className={style.cardText}>{text}</p>
-      
+      </div>
     </div>
   );
 };

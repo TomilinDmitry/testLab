@@ -1,0 +1,57 @@
+.slider {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .container {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 50px;
+    button {
+      border: none;
+      background: inherit;
+      cursor: pointer;
+
+      &:hover {
+        .hoveredArrowRight {
+          display: block;
+        }
+        .hoveredArrowLeft {
+          display: block;
+        }
+        .defaultArrowLeftt {
+          display: none;
+        }
+        .defaultArrowRight {
+          display: none;
+        }
+      }
+    }
+    .sliderContent {
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+      gap: 32px;
+    }
+  }
+}
+
+.hoveredArrowLeft {
+  display: none;
+}
+.hoveredArrowRight {
+  display: none;
+}
+
+@media screen and (max-width: 845px) {
+  .slider {
+    .container {
+      button {
+        display: none;
+      }
+      .sliderContent {
+        gap: 24px;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,25 @@
+.pagination {
+  display: flex;
+  margin-top: 20px;
+
+  .pageDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #cccccc;
+    margin: 0 17px;
+    cursor: pointer;
+
+    &.active {
+      background-color: #2a6cea;
+    }
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .pagination {
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: 400px;
+  }
+}

@@ -1,0 +1,31 @@
+.container {
+  position: fixed;
+  color: green;
+  padding: 16px;
+  border: 2px solid green;
+  top: 20px;
+  background: white;
+  border-radius: 8px;
+  left: 45%;
+  max-width: 300px;
+  font-weight: 500;
+  font-size: 20px;
+  z-index: 10;
+  transition: 0.5s all;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    left: 35%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    left: 15%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container {
+    left: 5%;
+  }
+}

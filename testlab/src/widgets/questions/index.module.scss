@@ -1,0 +1,42 @@
+.questionsBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .questionsList {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    max-width: 1008px;
+    width: 100%;
+    padding: 0;
+    gap: 24px;
+    h1 {
+      margin: 0;
+      font-size: 40px;
+      line-height: 56px;
+      font-weight: 600;
+      margin-bottom: 41px;
+    }
+  }
+}
+@media screen and (max-width: 1230px) {
+  .questionsBlock {
+    padding: 0px 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .questionsBlock {
+    h1 {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 42px;
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .questionsBlock {
+    h1 {
+      margin-bottom: 28px;
+    }
+  }
+}
