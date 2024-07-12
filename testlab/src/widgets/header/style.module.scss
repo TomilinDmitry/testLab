@@ -156,7 +156,7 @@
   .container {
     position: relative;
     max-height: none;
-    // background: white;
+    
     .logo {
       position: absolute;
       z-index: 2;
@@ -216,7 +216,7 @@
     }
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 320px) {
   .tabletNavigation {
     display: flex;
     position: absolute;
